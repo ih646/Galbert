@@ -7,7 +7,7 @@ Imagine that you're a gallatin student looking up courses and you find these cla
 Its a course finder for Gallatin students that allows one to see and add reviews to a professor and at the same time links the professors nyu faculty page in the course description. Users can register and login, look up courses and add reviews to the courses that they have taken. The total reviews then get averagec and an overall score is assigned to the professor.  
 
 ## Link:
-![Galbert](https://polar-plateau-63404.herokuapp.com/)
+![Galbert](https://polar-plateau-63404.herokuapp.com)
 
 
 ## Data Model
@@ -35,10 +35,6 @@ An Example Review with Embedded Items:
   comment: //some comment on the course
 }
 ```
-
-## [Link to Commented First Draft Schema](db.js) 
-
-![db](db.js)
 
 ## Wireframes
 
