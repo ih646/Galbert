@@ -1,0 +1,42 @@
+{
+  "name": "galbert",
+  "version": "1.0.0",
+  "description": "A course finder for gallatin students",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-008-spring-2018/ih646-final-project.git"
+  },
+  "author": "Imtiaz Haque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-008-spring-2018/ih646-final-project/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-008-spring-2018/ih646-final-project#readme",
+  "devDependencies": {
+    "bcrypt": "^2.0.1",
+    "chai": "^4.1.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.1.2",
+    "hbs": "^4.0.1",
+    "mocha": "^5.0.5",
+    "mongoose": "^5.0.16",
+    "mongoose-url-slugs": "^1.0.2",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.0",
+    "path": "^0.12.7",
+    "request": "^2.85.0"
+  },
+  "dependencies": {
+    "mongodb": "^3.0.7"
+  }
+}
