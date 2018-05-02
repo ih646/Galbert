@@ -4,7 +4,10 @@
 
 Imagine that you're a gallatin student looking up courses and you find these classes that seem interesting but you have no idea whether the professor is good or not, what are his/her credentials or what even he/she looks like! That's where Galbert comes in!!
 
-Its a course finder for Gallatin students that allows one to see and add reviews to a professor and at the same time links the professors nyu faculty page in the course description. Users can register and login, look up courses and add reviews to the courses that they have taken. The total reviews then get averagec and an overall score is assigned to the professor.
+Its a course finder for Gallatin students that allows one to see and add reviews to a professor and at the same time links the professors nyu faculty page in the course description. Users can register and login, look up courses and add reviews to the courses that they have taken. The total reviews then get averagec and an overall score is assigned to the professor.  
+
+## Link:
+![Galbert](https://polar-plateau-63404.herokuapp.com/)
 
 
 ## Data Model
@@ -12,7 +15,6 @@ Its a course finder for Gallatin students that allows one to see and add reviews
 The application will store Users, Courses and Reviews
 
 * users can look up their reviews tied to a specific course (via referencing)
-* each course will contain the professor name and the course taught by him/her (via embedding)
 * each review will contain the course name and the user submitting that review (via referencing)
 
 An Example User:
@@ -20,30 +22,17 @@ An Example User:
 ```javascript
 {
   username: "typicalStudent",
-  email: "mike@nyu.edu"
   hash: // a password hash,
-  reviews: // an array of reviews by that specific user
 }
 ```
 
-An Example Course with Embedded Items:
-
-```javascript
-{
-  professor: "Some name",
-  course_id: //Some id
-  description: "Autobahn",
-  createdAt: // timestamp
-}
-```
 An Example Review with Embedded Items:
 
 ```javascript
 {
-  user: // a reference to a User object
+  username: // a reference to a User object
   course: { professor: "Modern Germany", course_id://some id, description: "Autobahn",},
   comment: //some comment on the course
-  createdAt: // timestamp
 }
 ```
 
@@ -77,20 +66,6 @@ An Example Review with Embedded Items:
 4. as a user, I can add reviews to courses and professors in the site
 5. as a user, I can check my professor's credentials on the site.
 
-## Research Topics
-
-* (5 points) Integrate user authentication
-    * Will use passport.js for user authentication
-    * see <code>cs.nyu.edu/~jversoza/ait-final/register</code> for register page
-    * see <code>cs.nyu.edu/~jversoza/ait-final/login</code> for login page
-* (4 points) Use mocha/chai for unit tests
-    * see <code>https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha</code> for details
-* (5 points) React.js
-    * used React.js as the frontend framework; will learn it more indepth than in class, so I've assigned it 5 points
-
-10 points total out of 8 required points (___TODO__: addtional points will __not__ count for extra credit_)
-
-
 ## [Link to Initial Main Project File](app.js) 
 
 ![app](app.js)
@@ -98,4 +73,4 @@ An Example Review with Embedded Items:
 ## Annotations / References Used
 
 1. [passport.js authentication docs](http://passportjs.org/docs) - (add link to source code that was based on this)
-2. [Made progress with research with mocha](https://webapplog.com/tdd/)
+
