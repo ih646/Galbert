@@ -1,0 +1,27 @@
+#search-table{
+
+	float: right;
+	width: 78%;
+}
+
+#search-table thead{
+
+	color: black;
+
+}
+
+
+.nav-link{
+	color: white;
+	border: 1px solid red;
+}
+
+a.nav-link:hover{
+	color: white;
+	border: 1px solid white;
+}
+
+.search-form{
+
+	width: 20%;
+}

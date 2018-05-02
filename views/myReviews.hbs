@@ -1,0 +1,26 @@
+{{#if user}}
+	<table id = "myReviews" class="table">
+	<thead>
+		<th>user</th>
+		<th>id</th>
+		<th>title</th>
+		<th>instructor</th>
+		<th>description</th>
+		<th>score</th>
+	</thead>
+	<tbody>
+		{{#each reviews}}
+		<tr>
+			<td>{{this.user}}</th>
+			<td>{{this.course_id}}</td>
+			<td>{{this.title}}</td>
+			<td>{{this.instructor}}</td>
+			<td>{{this.description}}</td>
+			<td>{{this.score}}</td>
+		</tr>	
+		{{/each}}
+	</tbody>
+	</table>
+{{else}}
+<p class = "lead"> login to see your reviews <p>
+{{/if}}
